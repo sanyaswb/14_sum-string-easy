@@ -3,5 +3,12 @@
 #include <cmath>
 
 int sumString(const std::string& str) {
-	return 0;
+	int sum = 0;
+	for (int i = 0; i < str.length(); i++){
+		int code = int(str[i] - '0');
+		sum += code;
+	}
+	return sum;
 }
+
+
